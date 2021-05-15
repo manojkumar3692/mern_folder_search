@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-
+// Service
 import SERVICEAPI from '../../service/fileAPI.js'
 
 // Style
@@ -43,7 +43,7 @@ function Home(props) {
         <div className="home">
             <div className="home__inputField">
             <input placeholder="Search Here" value={searchInputField} type={'text'} onChange={(e) => setInputText(e)} />
-            <button onClick={() => searchDirectory()}>Submit</button>
+            <button onClick={() => searchDirectory()}>Search</button>
             </div>
             <div className="home__initial">
                 <ul>
